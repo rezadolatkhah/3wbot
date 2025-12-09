@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 project(hardware)
 
-# این دو خط رو حتماً اضافه کن (مهم‌ترین چیزی که کم بود!)
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
 endif()
@@ -13,7 +12,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
-# حالا بقیه همونه
 add_executable(wheels src/wheels.cpp)
 ament_target_dependencies(wheels rclcpp)
 
